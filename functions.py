@@ -25,6 +25,7 @@ def get_student_by_pk(pk):
         if str(pk) == str(text['pk']):
             student = text['full_name']
             return student
+    return False
 
 
 def get_skill(pk):
