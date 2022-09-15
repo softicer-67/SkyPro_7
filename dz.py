@@ -4,7 +4,7 @@ from functions import *
 def main():
     while True:
         user_input = input('Введите номер студента\n')
-        if user_input in '1234':
+        if user_input in ['1', '2', '3', '4']:
             user = get_student_by_pk(user_input)
             print('Студент', user)
             skill = get_skill(user_input)
